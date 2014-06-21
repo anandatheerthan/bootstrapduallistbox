@@ -9,20 +9,26 @@ http://www.virtuosoft.eu/code/bootstrap-duallistbox/
 The functionality of dual list box works fine however I was not able to use the final selected listbox values in form POST. Hence I modified little piece of code and uploaded here.
 
 Files to include:
+<code>
 <script src="js/duallistbox/jquery.bootstrap-duallistbox.js"></script>
 <link rel="stylesheet" type="text/css" href="js/duallistbox/bootstrap-duallistbox.css">
+</code>
 
 Form Element:
+
+<code>
 
 <select id="element" name="myselect" multiple style="height:200px">
 <option value="1">Element 1</option>
 <option value="2">Element 2</option>
 <option value="3">Element 3</option>
 </select>
+</code>
 
 Javascript:
 Comment/Uncomment whatever you need.
 
+<code>
 $(function () { 
         $('#element')
                 .bootstrapDualListbox({
@@ -47,12 +53,14 @@ $(function () {
                // .append('<option>added element</option>')
                 //.bootstrapDualListbox('refresh')
     });
-
+</code>
 I had to write this so that all elements are selected before form is submitted and it gets passed to $_POST or $_GET method.
 
+<code>
 $('#bootstrap-duallistbox-selected-list_myselect option').each(function(i) {
   $(this).attr("selected", "selected");
  });
+</code>
 
 PHP Code:
 
