@@ -18,11 +18,11 @@ Form Element:
 
 <code>
 
-<select id="element" name="myselect" multiple style="height:200px">
-<option value="1">Element 1</option>
-<option value="2">Element 2</option>
-<option value="3">Element 3</option>
-</select>
+ <select id="element" name="myselect" multiple style="height:200px">
+ <option value="1">Element 1</option>
+ <option value="2">Element 2</option>
+ <option value="3">Element 3</option>
+ </select>
 </code>
 
 Javascript:
